@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Api", "BuberDinner.Api\BuberDinner.Api.csproj", "{27A21094-8EC9-405B-9DE9-5F9818D60E66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Api", "BuberDinner.Api\BuberDinner.Api.csproj", "{27A21094-8EC9-405B-9DE9-5F9818D60E66}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{73D943AA-5AE2-4B68-B337-DB8CC4591C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Domain", "BuberDinner.Domain\BuberDinner.Domain.csproj", "{C77BD193-1371-406F-B59A-A353CBC207F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Domain", "BuberDinner.Domain\BuberDinner.Domain.csproj", "{C77BD193-1371-406F-B59A-A353CBC207F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Infrastructure", "BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{D8DA6177-150A-42CF-9AC9-CEA5C31BBD99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Infrastructure", "BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{D8DA6177-150A-42CF-9AC9-CEA5C31BBD99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Application", "BuberDinner.Application\BuberDinner.Application.csproj", "{CC179E89-421F-4B3E-90BD-083734C6CC38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Application", "BuberDinner.Application\BuberDinner.Application.csproj", "{CC179E89-421F-4B3E-90BD-083734C6CC38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{B4A700DE-9DB1-4A4B-B477-C75A1E3EB87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{B4A700DE-9DB1-4A4B-B477-C75A1E3EB87D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{0F5447F9-ADB2-46F8-9A90-60AD6D4301CB}"
+	ProjectSection(SolutionItems) = preProject
+		Login.http = Login.http
+		Register.http = Register.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +48,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{27A21094-8EC9-405B-9DE9-5F9818D60E66} = {73D943AA-5AE2-4B68-B337-DB8CC4591C38}
-		{B4A700DE-9DB1-4A4B-B477-C75A1E3EB87D} = {73D943AA-5AE2-4B68-B337-DB8CC4591C38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FC1BC80-66D6-48B3-9D9D-1FA600A7DE5C}
