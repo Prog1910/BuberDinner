@@ -32,9 +32,7 @@ public class AuthenticationService : IAuthenticationService
 
         var token = _jwtTokenGenerator.GenerateToken(user);
 
-        return new AuthenticationResult(
-            user,
-            token);
+        return new AuthenticationResult(user, token);
     }
 
     public AuthenticationResult Login(string email, string password)
@@ -47,8 +45,6 @@ public class AuthenticationService : IAuthenticationService
 
         var token = _jwtTokenGenerator.GenerateToken(user);
 
-        return new AuthenticationResult(
-            user,
-            token);
+        return new AuthenticationResult(user, token);
     }
 }
