@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers;
 
-public class ErrorsController : ControllerBase
+public sealed class ErrorsController : ApiController
 {
     [Route("/error")]
     public IActionResult Error()
     {
         var exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
-        return Problem(title: exception?.Message, statusCode: 400);
+
+        return Problem();
     }
 }
