@@ -15,6 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "Bu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{0F5447F9-ADB2-46F8-9A90-60AD6D4301CB}"
 	ProjectSection(SolutionItems) = preProject
+		ListDinners.http = ListDinners.http
 		Login.http = Login.http
 		Register.http = Register.http
 	EndProjectSection
