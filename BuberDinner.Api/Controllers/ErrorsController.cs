@@ -5,11 +5,11 @@ namespace BuberDinner.Api.Controllers;
 
 public sealed class ErrorsController : ApiController
 {
-    [Route("/error")]
-    public IActionResult Error()
-    {
-        var exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+	[Route("/error")]
+	public IActionResult Error()
+	{
+		var exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
 
-        return Problem();
-    }
+		return Problem();
+	}
 }
